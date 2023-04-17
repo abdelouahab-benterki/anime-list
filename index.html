@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--tailwind css-->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Anime Search</title>
+  </head>
+  <body class="font-main">
+    <header class="py-4">
+      <nav>
+        <div class="container flex justify-between items-center">
+          <h1 class="title capitalize text-3xl font-bold">anime search</h1>
+          <ul class="flex items-center justify-center gap-8">
+            <li>
+              <a href="#" class="nav-link">main</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">how to use</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <main class="mt-10">
+      <div class="container">
+        <form action="" class="flex justify-center items-center mb-12">
+          <input
+            type="text"
+            class="shadow-md border-transparent outline-none w-96 h-10 px-6 rounded-l-2xl search-field"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="px-6 h-10 bg-blue-600 text-lg font-bold text-white shadow-md rounded-r-2xl search-btn cursor-pointer"
+          />
+        </form>
+      </div>
+      <h2 class="text-center my-8 text-2xl font-bold content-title">
+        Top Ranking Animes
+      </h2>
+      <div
+        class="container flex justify-center items-center flex-wrap gap-8 animes-container mb-8"
+      ></div>
+    </main>
+    <!--javascript files-->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
